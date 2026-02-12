@@ -6,6 +6,8 @@ function App() {
 redirect("/dashboard")
  }
  redirect("/auth/login")
-}
+
+ }
+ 
 
 export default App
