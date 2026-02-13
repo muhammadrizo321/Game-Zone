@@ -34,7 +34,7 @@ export function RoomsModal() {
           <span>  Xona qo'shish</span>
           </Button>
         </DialogTrigger>
-        {showModal && <RoomsModalFrom  setShowModal={setSHowModal}/>}
+{showModal && <RoomsModalFrom setSHowModal={setSHowModal}/>}
     </Dialog>
   );
 }

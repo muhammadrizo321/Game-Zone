@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/common/ThemeProvider/ThemeProvider";
 
 const poppins = Poppins({
 variable:"--font-inter",
@@ -25,7 +26,11 @@ export default function RootLayout({
       <body
         className={` ${poppins.className}  antialiased w-full h-screen`}
       >
-        {children}
+        <ThemeProvider 
+        attribute={"class"}
+        defaultTheme="light"
+        disableTransitionOnChange
+        >{children}</ThemeProvider>
       </body>
     </html>
   );
